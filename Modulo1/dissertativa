@@ -1,0 +1,48 @@
+Exercício 2) 
+
+ Resposta: C
+ 
+ Programação Orientada a Objetos
+
+
+ A Programaçao Orientada(POO) a Objetos permite modelar as entidades do sistema(Livros, Autores, Usuários, Empréstimos) como objetos com propriedades e comportamentos específicos.
+ Também possibilita a reutilização de código através de conceitos como herança e polimorfismo.
+ Novos tipos de Livros, Autores ou Usuários podem ser facilmente incorporados ao sistema, sem afetar o restante do código, pois a adiçao seria modular.
+ A POO promove uma organização do código em torno de objetos e suas interações, tornando-o mais legível e fácil de manter.
+ 
+ 
+Exercício 3)
+
+ Classes do diagrama e tipos de propriedades:
+ 
+ Pessoa:
+ 	noome: string
+ 	lista de livros: Livro(array de objetos do tipo livro)
+ 	
+ Emprestimo:
+ 	data de retirada: Date
+ 	data de devolução: Date
+ 	livro: Livro
+ 	usuário: Usuario
+ 	
+ Usuario:
+ 	idade: int
+ 	histórico de empréstimos: Emprestimo(array de objetos do tipo Emprestimo)
+ 	
+ Livro:
+ 	título: string
+ 	autor: Autor
+ 	gênero: string
+ 	
+ Autor:
+ 	nacionalidade: string
+ 	
+ Relações:
+ 
+ 1 Autor é 1 pessoa.
+ 1 Usuário é 1 pessoa.
+ 1 Livro possui 1 Autor principal.
+ Cada Autor pode escrever N Livros.
+ Cada Livro pode ser emprestado N vezes mas não pode estar em mais de 1 empréstimo por vez.
+ Cada Usuário pode realizar N Empréstimos por vez.
+ Cada Empréstimo envolve pelo menos 1 Livro e apenas 1 Usuário.
